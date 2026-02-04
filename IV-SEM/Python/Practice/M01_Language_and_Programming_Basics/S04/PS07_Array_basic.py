@@ -26,5 +26,5 @@ li.insert(20,3333)
 li.count(1)
 print(li)
 "read a number from the user and display no.of digits in the number"
-num=int(input())
-print(len(str(num)))
+n=int(input())
+print(len(str(n)))

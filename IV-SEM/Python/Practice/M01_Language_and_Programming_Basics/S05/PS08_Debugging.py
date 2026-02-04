@@ -8,6 +8,18 @@ debugging techniques:
 1. Print Statements:
 2. try-exc
 3.using of pdb
+pdb-->python debugger module
+1.pause execution at certain points
+2.inspect variables
+pdb commands:
+1.n(ext): execute next line
+2.p(rint) <variable_name>: print value of variable
+3.c(ontinue): continue execution 
+4.l(ist): list nearby code
+5.s(tep): to start function
+6.r(eturn): continue execution until current function returns
+7 h(elp): list available commands
+8 q(uit): quit the execution
 '''
 try:
     num=int(input("Enter a number:"))
@@ -16,3 +28,11 @@ except ZeroDivisionError:
     print("can not divide by Zero")
 except ValueError:
     print("Invalid Input")
+#pdb example
+import pdb
+def add(a,b):
+    pdb.set_trace()
+    return a+b
+a=int(input())
+b=int(input())
+print(add(a,b))

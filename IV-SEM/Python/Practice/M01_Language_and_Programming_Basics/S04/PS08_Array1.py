@@ -12,6 +12,6 @@ print("Even numbers are:",np.arange(2,10,2))
 print("Odd numbers are:",np.arange(1,10,2))
 n=int(input("Enter the size"))
 ele=list(map(int,input("Enter the elements:").split()))
-print("Array ",ele)
+print("Array ")
 
 

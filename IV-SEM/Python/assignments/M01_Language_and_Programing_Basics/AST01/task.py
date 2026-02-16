@@ -1,11 +1,11 @@
 def Ticket_Pricing(n: int) -> int:
-   if n<=5:
+   if n<5:
       return 0
-   elif 6<=n and n<=17:
+   elif n<=17:
       return 10
-   elif 18<=n and n<=64:
+   elif n<=64:
       return 20
-   elif n>=65:
+   else:
       return 15
    pass
 
